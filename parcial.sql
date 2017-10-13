@@ -1,0 +1,59 @@
+
+p user c##prueba cascade;
+create user c##prueba identified by prueba;
+alter session set container=ORCLDB1;
+
+CREATE TABLESPACE COURSES
+DATAFILE 'usr\local\opt\oracle\oradata\ORCLDB\ORCLDB1\coursesA1.dbf' SIZE 50M,
+'usr\local\opt\oracle\oradata\ORCLDB\ORCLDB1\coursesB2.dbf' SIZE 50M
+EXTENT MANAGEMENT LOCAL
+SEGMENT SPACE MANAGEMENT AUTO;
+
+CREATE PROFILE admin LIMIT
+SESSIONS_PER_USER       2
+FAILED_LOGIN_ATTEMPTS   3
+IDLE_TIME               15;
+
+CREATE USER edwinmg2
+IDENTIFIED BY emg4155
+DEFAULT TABLESPACE COURSES
+QUOTA UNLIMITED ON COURSES;
+
+ALTER USER edwinmg2
+PROFILE admin;
+
+GRANT DBA TO edwinmg2;
+
+ALTER USER edwinmg2
+DEFAULT TABLESPACE COURSES
+TEMPORARY TABLESPACE "TEMP"
+ACCOUNT UNLOCK ;
+p user c##prueba cascade;
+create user c##prueba identified by prueba;
+alter session set container=ORCLDB1;
+
+CREATE TABLESPACE COURSES
+DATAFILE 'usr\local\opt\oracle\oradata\ORCLDB\ORCLDB1\coursesA1.dbf' SIZE 50M,
+'usr\local\opt\oracle\oradata\ORCLDB\ORCLDB1\coursesB2.dbf' SIZE 50M
+EXTENT MANAGEMENT LOCAL
+SEGMENT SPACE MANAGEMENT AUTO;
+
+CREATE PROFILE admin LIMIT
+SESSIONS_PER_USER       2
+FAILED_LOGIN_ATTEMPTS   3
+IDLE_TIME               15;
+
+CREATE USER edwinmg2
+IDENTIFIED BY emg4155
+DEFAULT TABLESPACE COURSES
+QUOTA UNLIMITED ON COURSES;
+
+ALTER USER edwinmg2
+PROFILE admin;
+
+GRANT DBA TO edwinmg2;
+
+ALTER USER edwinmg2
+DEFAULT TABLESPACE COURSES
+TEMPORARY TABLESPACE "TEMP"
+ACCOUNT UNLOCK ;

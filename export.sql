@@ -1,0 +1,1790 @@
+--------------------------------------------------------
+-- Archivo creado  - viernes-octubre-13-2017   
+--------------------------------------------------------
+DROP TABLE "AQ$_INTERNET_AGENT_PRIVS" cascade constraints;
+DROP TABLE "AQ$_INTERNET_AGENTS" cascade constraints;
+DROP TABLE "AQ$_QUEUES" cascade constraints;
+DROP TABLE "AQ$_QUEUE_TABLES" cascade constraints;
+DROP TABLE "AQ$_SCHEDULES" cascade constraints;
+DROP TABLE "HELP" cascade constraints;
+DROP TABLE "LOGMNR_AGE_SPILL$" cascade constraints;
+DROP TABLE "LOGMNR_ATTRCOL$" cascade constraints;
+DROP TABLE "LOGMNR_ATTRIBUTE$" cascade constraints;
+DROP TABLE "LOGMNR_CCOL$" cascade constraints;
+DROP TABLE "LOGMNRC_CONCOL_GG" cascade constraints;
+DROP TABLE "LOGMNRC_CON_GG" cascade constraints;
+DROP TABLE "LOGMNRC_DBNAME_UID_MAP" cascade constraints;
+DROP TABLE "LOGMNR_CDEF$" cascade constraints;
+DROP TABLE "LOGMNRC_GSBA" cascade constraints;
+DROP TABLE "LOGMNRC_GSII" cascade constraints;
+DROP TABLE "LOGMNRC_GTCS" cascade constraints;
+DROP TABLE "LOGMNRC_GTLO" cascade constraints;
+DROP TABLE "LOGMNRC_INDCOL_GG" cascade constraints;
+DROP TABLE "LOGMNRC_IND_GG" cascade constraints;
+DROP TABLE "LOGMNR_COL$" cascade constraints;
+DROP TABLE "LOGMNR_COLTYPE$" cascade constraints;
+DROP TABLE "LOGMNR_CON$" cascade constraints;
+DROP TABLE "LOGMNR_CONTAINER$" cascade constraints;
+DROP TABLE "LOGMNRC_SEQ_GG" cascade constraints;
+DROP TABLE "LOGMNRC_SHARD_TS" cascade constraints;
+DROP TABLE "LOGMNRC_TS" cascade constraints;
+DROP TABLE "LOGMNRC_TSPART" cascade constraints;
+DROP TABLE "LOGMNR_DICTIONARY$" cascade constraints;
+DROP TABLE "LOGMNR_DICTSTATE$" cascade constraints;
+DROP TABLE "LOGMNR_DID$" cascade constraints;
+DROP TABLE "LOGMNR_ENC$" cascade constraints;
+DROP TABLE "LOGMNR_ERROR$" cascade constraints;
+DROP TABLE "LOGMNR_FILTER$" cascade constraints;
+DROP TABLE "LOGMNRGGC_GTCS" cascade constraints;
+DROP TABLE "LOGMNRGGC_GTLO" cascade constraints;
+DROP TABLE "LOGMNR_GLOBAL$" cascade constraints;
+DROP TABLE "LOGMNR_GT_TAB_INCLUDE$" cascade constraints;
+DROP TABLE "LOGMNR_GT_USER_INCLUDE$" cascade constraints;
+DROP TABLE "LOGMNR_GT_XID_INCLUDE$" cascade constraints;
+DROP TABLE "LOGMNR_ICOL$" cascade constraints;
+DROP TABLE "LOGMNR_IND$" cascade constraints;
+DROP TABLE "LOGMNR_INDCOMPART$" cascade constraints;
+DROP TABLE "LOGMNR_INDPART$" cascade constraints;
+DROP TABLE "LOGMNR_INDSUBPART$" cascade constraints;
+DROP TABLE "LOGMNR_INTEGRATED_SPILL$" cascade constraints;
+DROP TABLE "LOGMNR_KOPM$" cascade constraints;
+DROP TABLE "LOGMNR_LOB$" cascade constraints;
+DROP TABLE "LOGMNR_LOBFRAG$" cascade constraints;
+DROP TABLE "LOGMNR_LOG$" cascade constraints;
+DROP TABLE "LOGMNR_LOGMNR_BUILDLOG" cascade constraints;
+DROP TABLE "LOGMNR_NTAB$" cascade constraints;
+DROP TABLE "LOGMNR_OBJ$" cascade constraints;
+DROP TABLE "LOGMNR_OPQTYPE$" cascade constraints;
+DROP TABLE "LOGMNR_PARAMETER$" cascade constraints;
+DROP TABLE "LOGMNR_PARTOBJ$" cascade constraints;
+DROP TABLE "LOGMNRP_CTAS_PART_MAP" cascade constraints;
+DROP TABLE "LOGMNR_PDB_INFO$" cascade constraints;
+DROP TABLE "LOGMNR_PROCESSED_LOG$" cascade constraints;
+DROP TABLE "LOGMNR_PROPS$" cascade constraints;
+DROP TABLE "LOGMNR_REFCON$" cascade constraints;
+DROP TABLE "LOGMNR_RESTART_CKPT$" cascade constraints;
+DROP TABLE "LOGMNR_RESTART_CKPT_TXINFO$" cascade constraints;
+DROP TABLE "LOGMNR_SEED$" cascade constraints;
+DROP TABLE "LOGMNR_SESSION$" cascade constraints;
+DROP TABLE "LOGMNR_SESSION_ACTIONS$" cascade constraints;
+DROP TABLE "LOGMNR_SESSION_EVOLVE$" cascade constraints;
+DROP TABLE "LOGMNR_SHARD_TS" cascade constraints;
+DROP TABLE "LOGMNR_SPILL$" cascade constraints;
+DROP TABLE "LOGMNR_SUBCOLTYPE$" cascade constraints;
+DROP TABLE "LOGMNR_TAB$" cascade constraints;
+DROP TABLE "LOGMNR_TABCOMPART$" cascade constraints;
+DROP TABLE "LOGMNR_TABPART$" cascade constraints;
+DROP TABLE "LOGMNR_TABSUBPART$" cascade constraints;
+DROP TABLE "LOGMNRT_MDDL$" cascade constraints;
+DROP TABLE "LOGMNR_TS$" cascade constraints;
+DROP TABLE "LOGMNR_TYPE$" cascade constraints;
+DROP TABLE "LOGMNR_UID$" cascade constraints;
+DROP TABLE "LOGMNR_USER$" cascade constraints;
+DROP TABLE "LOGSTDBY$APPLY_MILESTONE" cascade constraints;
+DROP TABLE "LOGSTDBY$APPLY_PROGRESS" cascade constraints;
+DROP TABLE "LOGSTDBY$EDS_TABLES" cascade constraints;
+DROP TABLE "LOGSTDBY$EVENTS" cascade constraints;
+DROP TABLE "LOGSTDBY$FLASHBACK_SCN" cascade constraints;
+DROP TABLE "LOGSTDBY$HISTORY" cascade constraints;
+DROP TABLE "LOGSTDBY$PARAMETERS" cascade constraints;
+DROP TABLE "LOGSTDBY$PLSQL" cascade constraints;
+DROP TABLE "LOGSTDBY$SCN" cascade constraints;
+DROP TABLE "LOGSTDBY$SKIP" cascade constraints;
+DROP TABLE "LOGSTDBY$SKIP_SUPPORT" cascade constraints;
+DROP TABLE "LOGSTDBY$SKIP_TRANSACTION" cascade constraints;
+DROP TABLE "MVIEW$_ADV_AJG" cascade constraints;
+DROP TABLE "MVIEW$_ADV_BASETABLE" cascade constraints;
+DROP TABLE "MVIEW$_ADV_CLIQUE" cascade constraints;
+DROP TABLE "MVIEW$_ADV_ELIGIBLE" cascade constraints;
+DROP TABLE "MVIEW$_ADV_EXCEPTIONS" cascade constraints;
+DROP TABLE "MVIEW$_ADV_FILTER" cascade constraints;
+DROP TABLE "MVIEW$_ADV_FILTERINSTANCE" cascade constraints;
+DROP TABLE "MVIEW$_ADV_FJG" cascade constraints;
+DROP TABLE "MVIEW$_ADV_GC" cascade constraints;
+DROP TABLE "MVIEW$_ADV_INFO" cascade constraints;
+DROP TABLE "MVIEW$_ADV_JOURNAL" cascade constraints;
+DROP TABLE "MVIEW$_ADV_LEVEL" cascade constraints;
+DROP TABLE "MVIEW$_ADV_LOG" cascade constraints;
+DROP TABLE "MVIEW$_ADV_OUTPUT" cascade constraints;
+DROP TABLE "MVIEW$_ADV_PARAMETERS" cascade constraints;
+DROP TABLE "MVIEW$_ADV_PLAN" cascade constraints;
+DROP TABLE "MVIEW$_ADV_PRETTY" cascade constraints;
+DROP TABLE "MVIEW$_ADV_ROLLUP" cascade constraints;
+DROP TABLE "MVIEW$_ADV_SQLDEPEND" cascade constraints;
+DROP TABLE "MVIEW$_ADV_TEMP" cascade constraints;
+DROP TABLE "MVIEW$_ADV_WORKLOAD" cascade constraints;
+DROP TABLE "OL$" cascade constraints;
+DROP TABLE "OL$HINTS" cascade constraints;
+DROP TABLE "OL$NODES" cascade constraints;
+DROP TABLE "REDO_DB" cascade constraints;
+DROP TABLE "REDO_LOG" cascade constraints;
+DROP TABLE "ROLLING$CONNECTIONS" cascade constraints;
+DROP TABLE "ROLLING$DATABASES" cascade constraints;
+DROP TABLE "ROLLING$DIRECTIVES" cascade constraints;
+DROP TABLE "ROLLING$EVENTS" cascade constraints;
+DROP TABLE "ROLLING$PARAMETERS" cascade constraints;
+DROP TABLE "ROLLING$PLAN" cascade constraints;
+DROP TABLE "ROLLING$STATISTICS" cascade constraints;
+DROP TABLE "ROLLING$STATUS" cascade constraints;
+DROP TABLE "SCHEDULER_JOB_ARGS_TBL" cascade constraints;
+DROP TABLE "SCHEDULER_PROGRAM_ARGS_TBL" cascade constraints;
+DROP TABLE "SQLPLUS_PRODUCT_PROFILE" cascade constraints;
+DROP SEQUENCE "LOGMNR_DIDS$";
+DROP SEQUENCE "LOGMNR_EVOLVE_SEQ$";
+DROP SEQUENCE "LOGMNR_SEQ$";
+DROP SEQUENCE "LOGMNR_UIDS$";
+DROP SEQUENCE "MVIEW$_ADVSEQ_GENERIC";
+DROP SEQUENCE "MVIEW$_ADVSEQ_ID";
+DROP SEQUENCE "ROLLING_EVENT_SEQ$";
+--------------------------------------------------------
+--  DDL for Table AQ$_INTERNET_AGENT_PRIVS
+--------------------------------------------------------
+
+  CREATE TABLE "AQ$_INTERNET_AGENT_PRIVS" SHARING=METADATA 
+   (	"AGENT_NAME" VARCHAR2(512), 
+	"DB_USERNAME" VARCHAR2(128)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table AQ$_INTERNET_AGENTS
+--------------------------------------------------------
+
+  CREATE TABLE "AQ$_INTERNET_AGENTS" SHARING=METADATA 
+   (	"AGENT_NAME" VARCHAR2(512), 
+	"PROTOCOL" NUMBER(*,0), 
+	"SPARE1" VARCHAR2(128)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table AQ$_QUEUES
+--------------------------------------------------------
+
+  CREATE TABLE "AQ$_QUEUES" SHARING=METADATA 
+   (	"OID" RAW(16), 
+	"EVENTID" NUMBER, 
+	"NAME" VARCHAR2(128), 
+	"TABLE_OBJNO" NUMBER, 
+	"USAGE" NUMBER, 
+	"ENABLE_FLAG" NUMBER, 
+	"MAX_RETRIES" NUMBER, 
+	"RETRY_DELAY" NUMBER, 
+	"PROPERTIES" NUMBER, 
+	"RET_TIME" NUMBER, 
+	"QUEUE_COMMENT" VARCHAR2(2000), 
+	"SUBSCRIBERS" "AQ$_SUBSCRIBERS" , 
+	"MEMORY_THRESHOLD" NUMBER, 
+	"SERVICE_NAME" VARCHAR2(64), 
+	"NETWORK_NAME" VARCHAR2(256), 
+	"SUB_OID" RAW(16), 
+	"SHARDED" NUMBER, 
+	"BASE_QUEUE" NUMBER DEFAULT 0
+   ) ;
+--------------------------------------------------------
+--  DDL for Table AQ$_QUEUE_TABLES
+--------------------------------------------------------
+
+  CREATE TABLE "AQ$_QUEUE_TABLES" SHARING=METADATA 
+   (	"SCHEMA" VARCHAR2(128), 
+	"NAME" VARCHAR2(128), 
+	"UDATA_TYPE" NUMBER, 
+	"OBJNO" NUMBER, 
+	"FLAGS" NUMBER, 
+	"SORT_COLS" NUMBER, 
+	"TIMEZONE" VARCHAR2(64), 
+	"TABLE_COMMENT" VARCHAR2(2000)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table AQ$_SCHEDULES
+--------------------------------------------------------
+
+  CREATE TABLE "AQ$_SCHEDULES" SHARING=METADATA 
+   (	"OID" RAW(16), 
+	"DESTINATION" VARCHAR2(390), 
+	"START_TIME" DATE, 
+	"DURATION" VARCHAR2(8), 
+	"NEXT_TIME" VARCHAR2(128), 
+	"LATENCY" VARCHAR2(8), 
+	"LAST_TIME" DATE, 
+	"JOBNO" NUMBER
+   ) ;
+--------------------------------------------------------
+--  DDL for Table HELP
+--------------------------------------------------------
+
+  CREATE TABLE "HELP" SHARING=METADATA 
+   (	"TOPIC" VARCHAR2(50), 
+	"SEQ" NUMBER, 
+	"INFO" VARCHAR2(80)
+   ) ;
+  GRANT SELECT ON "HELP" TO PUBLIC;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_AGE_SPILL$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_AGE_SPILL$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"XIDUSN" NUMBER, 
+	"XIDSLT" NUMBER, 
+	"XIDSQN" NUMBER, 
+	"CHUNK" NUMBER, 
+	"SEQUENCE#" NUMBER, 
+	"OFFSET" NUMBER, 
+	"SPILL_DATA" BLOB, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"PDBID" NUMBER
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_ATTRCOL$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_ATTRCOL$" SHARING=METADATA 
+   (	"INTCOL#" NUMBER, 
+	"NAME" VARCHAR2(4000), 
+	"OBJ#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_ATTRIBUTE$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_ATTRIBUTE$" SHARING=METADATA 
+   (	"VERSION#" NUMBER, 
+	"NAME" VARCHAR2(384), 
+	"ATTRIBUTE#" NUMBER, 
+	"ATTR_TOID" RAW(16), 
+	"ATTR_VERSION#" NUMBER, 
+	"SYNOBJ#" NUMBER, 
+	"PROPERTIES" NUMBER, 
+	"CHARSETID" NUMBER, 
+	"CHARSETFORM" NUMBER, 
+	"LENGTH" NUMBER, 
+	"PRECISION#" NUMBER, 
+	"SCALE" NUMBER, 
+	"EXTERNNAME" VARCHAR2(4000), 
+	"XFLAGS" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"SPARE4" NUMBER, 
+	"SPARE5" NUMBER, 
+	"SETTER" NUMBER, 
+	"GETTER" NUMBER, 
+	"TOID" RAW(16), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_CCOL$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_CCOL$" SHARING=METADATA 
+   (	"CON#" NUMBER, 
+	"OBJ#" NUMBER, 
+	"COL#" NUMBER, 
+	"POS#" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_CONCOL_GG
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_CONCOL_GG" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"CON#" NUMBER, 
+	"COMMIT_SCN" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"POS#" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_CON_GG
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_CON_GG" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"CON#" NUMBER, 
+	"NAME" VARCHAR2(384), 
+	"COMMIT_SCN" NUMBER, 
+	"DROP_SCN" NUMBER, 
+	"BASEOBJ#" NUMBER, 
+	"BASEOBJV#" NUMBER, 
+	"FLAGS" NUMBER, 
+	"INDEXOBJ#" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"SPARE4" VARCHAR2(4000), 
+	"SPARE5" VARCHAR2(4000), 
+	"SPARE6" VARCHAR2(4000)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_DBNAME_UID_MAP
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_DBNAME_UID_MAP" SHARING=METADATA 
+   (	"GLOBAL_NAME" VARCHAR2(384), 
+	"LOGMNR_UID" NUMBER, 
+	"FLAGS" NUMBER, 
+	"PDB_NAME" VARCHAR2(384), 
+	"LOGMNR_MDH" NUMBER
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_CDEF$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_CDEF$" SHARING=METADATA 
+   (	"CON#" NUMBER, 
+	"COLS" NUMBER, 
+	"TYPE#" NUMBER, 
+	"ROBJ#" NUMBER, 
+	"RCON#" NUMBER, 
+	"ENABLED" NUMBER, 
+	"DEFER" NUMBER, 
+	"OBJ#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_GSBA
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_GSBA" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"AS_OF_SCN" NUMBER, 
+	"FDO_LENGTH" NUMBER, 
+	"FDO_VALUE" RAW(255), 
+	"CHARSETID" NUMBER, 
+	"NCHARSETID" NUMBER, 
+	"DBTIMEZONE_LEN" NUMBER, 
+	"DBTIMEZONE_VALUE" VARCHAR2(192), 
+	"LOGMNR_SPARE1" NUMBER, 
+	"LOGMNR_SPARE2" NUMBER, 
+	"LOGMNR_SPARE3" VARCHAR2(1000), 
+	"LOGMNR_SPARE4" DATE, 
+	"DB_GLOBAL_NAME" VARCHAR2(384)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_GSII
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_GSII" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"OBJ#" NUMBER, 
+	"BO#" NUMBER, 
+	"INDTYPE#" NUMBER, 
+	"DROP_SCN" NUMBER, 
+	"LOGMNR_SPARE1" NUMBER, 
+	"LOGMNR_SPARE2" NUMBER, 
+	"LOGMNR_SPARE3" VARCHAR2(1000), 
+	"LOGMNR_SPARE4" DATE
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_GTCS
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_GTCS" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"OBJ#" NUMBER, 
+	"OBJV#" NUMBER, 
+	"SEGCOL#" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"COLNAME" VARCHAR2(384), 
+	"TYPE#" NUMBER, 
+	"LENGTH" NUMBER, 
+	"PRECISION" NUMBER, 
+	"SCALE" NUMBER, 
+	"INTERVAL_LEADING_PRECISION" NUMBER, 
+	"INTERVAL_TRAILING_PRECISION" NUMBER, 
+	"PROPERTY" NUMBER, 
+	"TOID" RAW(16), 
+	"CHARSETID" NUMBER, 
+	"CHARSETFORM" NUMBER, 
+	"TYPENAME" VARCHAR2(384), 
+	"FQCOLNAME" VARCHAR2(4000), 
+	"NUMINTCOLS" NUMBER, 
+	"NUMATTRS" NUMBER, 
+	"ADTORDER" NUMBER, 
+	"LOGMNR_SPARE1" NUMBER, 
+	"LOGMNR_SPARE2" NUMBER, 
+	"LOGMNR_SPARE3" VARCHAR2(1000), 
+	"LOGMNR_SPARE4" DATE, 
+	"LOGMNR_SPARE5" NUMBER, 
+	"LOGMNR_SPARE6" NUMBER, 
+	"LOGMNR_SPARE7" NUMBER, 
+	"LOGMNR_SPARE8" NUMBER, 
+	"LOGMNR_SPARE9" NUMBER, 
+	"COL#" NUMBER, 
+	"XTYPESCHEMANAME" VARCHAR2(384), 
+	"XTYPENAME" VARCHAR2(4000), 
+	"XFQCOLNAME" VARCHAR2(4000), 
+	"XTOPINTCOL" NUMBER, 
+	"XREFFEDTABLEOBJN" NUMBER, 
+	"XREFFEDTABLEOBJV" NUMBER, 
+	"XCOLTYPEFLAGS" NUMBER, 
+	"XOPQTYPETYPE" NUMBER, 
+	"XOPQTYPEFLAGS" NUMBER, 
+	"XOPQLOBINTCOL" NUMBER, 
+	"XOPQOBJINTCOL" NUMBER, 
+	"XXMLINTCOL" NUMBER, 
+	"EAOWNER#" NUMBER, 
+	"EAMKEYID" VARCHAR2(192), 
+	"EAENCALG" NUMBER, 
+	"EAINTALG" NUMBER, 
+	"EACOLKLC" RAW(2000), 
+	"EAKLCLEN" NUMBER, 
+	"EAFLAGS" NUMBER, 
+	"LOGMNRDERIVEDFLAGS" NUMBER, 
+	"COLLID" NUMBER, 
+	"COLLINTCOL#" NUMBER, 
+	"ACDRRESCOL#" NUMBER
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_GTLO
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_GTLO" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"KEYOBJ#" NUMBER, 
+	"LVLCNT" NUMBER, 
+	"BASEOBJ#" NUMBER, 
+	"BASEOBJV#" NUMBER, 
+	"LVL1OBJ#" NUMBER, 
+	"LVL2OBJ#" NUMBER, 
+	"LVL0TYPE#" NUMBER, 
+	"LVL1TYPE#" NUMBER, 
+	"LVL2TYPE#" NUMBER, 
+	"OWNER#" NUMBER, 
+	"OWNERNAME" VARCHAR2(384), 
+	"LVL0NAME" VARCHAR2(384), 
+	"LVL1NAME" VARCHAR2(384), 
+	"LVL2NAME" VARCHAR2(384), 
+	"INTCOLS" NUMBER, 
+	"COLS" NUMBER, 
+	"KERNELCOLS" NUMBER, 
+	"TAB_FLAGS" NUMBER, 
+	"TRIGFLAG" NUMBER, 
+	"ASSOC#" NUMBER, 
+	"OBJ_FLAGS" NUMBER, 
+	"TS#" NUMBER, 
+	"TSNAME" VARCHAR2(90), 
+	"PROPERTY" NUMBER, 
+	"START_SCN" NUMBER, 
+	"DROP_SCN" NUMBER, 
+	"XIDUSN" NUMBER, 
+	"XIDSLT" NUMBER, 
+	"XIDSQN" NUMBER, 
+	"FLAGS" NUMBER, 
+	"LOGMNR_SPARE1" NUMBER, 
+	"LOGMNR_SPARE2" NUMBER, 
+	"LOGMNR_SPARE3" VARCHAR2(1000), 
+	"LOGMNR_SPARE4" DATE, 
+	"LOGMNR_SPARE5" NUMBER, 
+	"LOGMNR_SPARE6" NUMBER, 
+	"LOGMNR_SPARE7" NUMBER, 
+	"LOGMNR_SPARE8" NUMBER, 
+	"LOGMNR_SPARE9" NUMBER, 
+	"PARTTYPE" NUMBER, 
+	"SUBPARTTYPE" NUMBER, 
+	"UNSUPPORTEDCOLS" NUMBER, 
+	"COMPLEXTYPECOLS" NUMBER, 
+	"NTPARENTOBJNUM" NUMBER, 
+	"NTPARENTOBJVERSION" NUMBER, 
+	"NTPARENTINTCOLNUM" NUMBER, 
+	"LOGMNRTLOFLAGS" NUMBER, 
+	"LOGMNRMCV" VARCHAR2(30), 
+	"ACDRFLAGS" NUMBER, 
+	"ACDRTSOBJ#" NUMBER, 
+	"ACDRROWTSINTCOL#" NUMBER
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_INDCOL_GG
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_INDCOL_GG" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"OBJ#" NUMBER, 
+	"COMMIT_SCN" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"POS#" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_IND_GG
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_IND_GG" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"OBJ#" NUMBER, 
+	"NAME" VARCHAR2(384), 
+	"COMMIT_SCN" NUMBER, 
+	"DROP_SCN" NUMBER, 
+	"BASEOBJ#" NUMBER, 
+	"BASEOBJV#" NUMBER, 
+	"FLAGS" NUMBER, 
+	"OWNER#" NUMBER, 
+	"OWNERNAME" VARCHAR2(384), 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"SPARE4" VARCHAR2(4000), 
+	"SPARE5" VARCHAR2(4000), 
+	"SPARE6" VARCHAR2(4000)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_COL$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_COL$" SHARING=METADATA 
+   (	"COL#" NUMBER(22,0), 
+	"SEGCOL#" NUMBER(22,0), 
+	"NAME" VARCHAR2(384), 
+	"TYPE#" NUMBER(22,0), 
+	"LENGTH" NUMBER(22,0), 
+	"PRECISION#" NUMBER(22,0), 
+	"SCALE" NUMBER(22,0), 
+	"NULL$" NUMBER(22,0), 
+	"INTCOL#" NUMBER(22,0), 
+	"PROPERTY" NUMBER(22,0), 
+	"CHARSETID" NUMBER(22,0), 
+	"CHARSETFORM" NUMBER(22,0), 
+	"SPARE1" NUMBER(22,0), 
+	"SPARE2" NUMBER(22,0), 
+	"OBJ#" NUMBER(22,0), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0), 
+	"COLLID" NUMBER, 
+	"COLLINTCOL#" NUMBER, 
+	"ACDRRESCOL#" NUMBER
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_COLTYPE$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_COLTYPE$" SHARING=METADATA 
+   (	"COL#" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"TOID" RAW(16), 
+	"VERSION#" NUMBER, 
+	"PACKED" NUMBER, 
+	"INTCOLS" NUMBER, 
+	"INTCOL#S" RAW(2000), 
+	"FLAGS" NUMBER, 
+	"TYPIDCOL#" NUMBER, 
+	"SYNOBJ#" NUMBER, 
+	"OBJ#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_CON$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_CON$" SHARING=METADATA 
+   (	"OWNER#" NUMBER, 
+	"NAME" VARCHAR2(384), 
+	"CON#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0), 
+	"START_SCNBAS" NUMBER, 
+	"START_SCNWRP" NUMBER
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_CONTAINER$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_CONTAINER$" SHARING=METADATA 
+   (	"OBJ#" NUMBER, 
+	"CON_ID#" NUMBER, 
+	"DBID" NUMBER, 
+	"CON_UID" NUMBER, 
+	"CREATE_SCNWRP" NUMBER, 
+	"CREATE_SCNBAS" NUMBER, 
+	"FLAGS" NUMBER, 
+	"STATUS" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0), 
+	"VSN" NUMBER, 
+	"FED_ROOT_CON_ID#" NUMBER
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_SEQ_GG
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_SEQ_GG" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"OBJ#" NUMBER, 
+	"COMMIT_SCN" NUMBER, 
+	"DROP_SCN" NUMBER, 
+	"SEQ_FLAGS" NUMBER, 
+	"OWNER#" NUMBER, 
+	"OWNERNAME" VARCHAR2(384), 
+	"OBJNAME" VARCHAR2(384), 
+	"SEQCACHE" NUMBER, 
+	"SEQINC" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000), 
+	"SPARE4" VARCHAR2(4000)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_SHARD_TS
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_SHARD_TS" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"TABLESPACE_NAME" VARCHAR2(90), 
+	"CHUNK_NUMBER" NUMBER, 
+	"START_SCN" NUMBER, 
+	"DROP_SCN" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_TS
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_TS" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"TS#" NUMBER(22,0), 
+	"NAME" VARCHAR2(90), 
+	"START_SCN" NUMBER, 
+	"DROP_SCN" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRC_TSPART
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRC_TSPART" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"OBJ#" NUMBER, 
+	"TS#" NUMBER, 
+	"START_SCN" NUMBER, 
+	"DROP_SCN" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_DICTIONARY$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_DICTIONARY$" SHARING=METADATA 
+   (	"DB_NAME" VARCHAR2(27), 
+	"DB_ID" NUMBER(20,0), 
+	"DB_CREATED" VARCHAR2(20), 
+	"DB_DICT_CREATED" VARCHAR2(20), 
+	"DB_DICT_SCN" NUMBER(22,0), 
+	"DB_THREAD_MAP" RAW(8), 
+	"DB_TXN_SCNBAS" NUMBER(22,0), 
+	"DB_TXN_SCNWRP" NUMBER(22,0), 
+	"DB_RESETLOGS_CHANGE#" NUMBER(22,0), 
+	"DB_RESETLOGS_TIME" VARCHAR2(20), 
+	"DB_VERSION_TIME" VARCHAR2(20), 
+	"DB_REDO_TYPE_ID" VARCHAR2(8), 
+	"DB_REDO_RELEASE" VARCHAR2(60), 
+	"DB_CHARACTER_SET" VARCHAR2(192), 
+	"DB_VERSION" VARCHAR2(240), 
+	"DB_STATUS" VARCHAR2(240), 
+	"DB_GLOBAL_NAME" VARCHAR2(384), 
+	"DB_DICT_MAXOBJECTS" NUMBER(22,0), 
+	"DB_DICT_OBJECTCOUNT" NUMBER(22,0), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0), 
+	"PDB_NAME" VARCHAR2(384), 
+	"PDB_ID" NUMBER, 
+	"PDB_UID" NUMBER, 
+	"PDB_DBID" NUMBER, 
+	"PDB_GUID" RAW(16), 
+	"PDB_CREATE_SCN" NUMBER, 
+	"PDB_COUNT" NUMBER, 
+	"PDB_GLOBAL_NAME" VARCHAR2(384), 
+	"FED_ROOT_CON_ID#" NUMBER
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_DICTSTATE$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_DICTSTATE$" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER(22,0), 
+	"START_SCNBAS" NUMBER, 
+	"START_SCNWRP" NUMBER, 
+	"END_SCNBAS" NUMBER, 
+	"END_SCNWRP" NUMBER, 
+	"REDO_THREAD" NUMBER, 
+	"RBASQN" NUMBER, 
+	"RBABLK" NUMBER, 
+	"RBABYTE" NUMBER, 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_DID$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_DID$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"LOGMNR_DID" NUMBER, 
+	"FLAGS" NUMBER DEFAULT 0, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000), 
+	"SPARE4" TIMESTAMP (6)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_ENC$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_ENC$" SHARING=METADATA 
+   (	"OBJ#" NUMBER, 
+	"OWNER#" NUMBER, 
+	"ENCALG" NUMBER, 
+	"INTALG" NUMBER, 
+	"COLKLC" RAW(2000), 
+	"KLCLEN" NUMBER, 
+	"FLAG" NUMBER, 
+	"MKEYID" VARCHAR2(192), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_ERROR$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_ERROR$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"TIME_OF_ERROR" DATE, 
+	"CODE" NUMBER, 
+	"MESSAGE" VARCHAR2(4000), 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"SPARE4" VARCHAR2(4000), 
+	"SPARE5" VARCHAR2(4000)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_FILTER$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_FILTER$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"FILTER_TYPE" VARCHAR2(30), 
+	"ATTR1" NUMBER, 
+	"ATTR2" NUMBER, 
+	"ATTR3" NUMBER, 
+	"ATTR4" NUMBER, 
+	"ATTR5" NUMBER, 
+	"ATTR6" NUMBER, 
+	"FILTER_SCN" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRGGC_GTCS
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRGGC_GTCS" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"OBJ#" NUMBER, 
+	"OBJV#" NUMBER, 
+	"SEGCOL#" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"COLNAME" VARCHAR2(384), 
+	"TYPE#" NUMBER, 
+	"LENGTH" NUMBER, 
+	"PRECISION" NUMBER, 
+	"SCALE" NUMBER, 
+	"INTERVAL_LEADING_PRECISION" NUMBER, 
+	"INTERVAL_TRAILING_PRECISION" NUMBER, 
+	"PROPERTY" NUMBER, 
+	"TOID" RAW(16), 
+	"CHARSETID" NUMBER, 
+	"CHARSETFORM" NUMBER, 
+	"TYPENAME" VARCHAR2(384), 
+	"FQCOLNAME" VARCHAR2(4000), 
+	"NUMINTCOLS" NUMBER, 
+	"NUMATTRS" NUMBER, 
+	"ADTORDER" NUMBER, 
+	"LOGMNR_SPARE1" NUMBER, 
+	"LOGMNR_SPARE2" NUMBER, 
+	"LOGMNR_SPARE3" VARCHAR2(1000), 
+	"LOGMNR_SPARE4" DATE, 
+	"LOGMNR_SPARE5" NUMBER, 
+	"LOGMNR_SPARE6" NUMBER, 
+	"LOGMNR_SPARE7" NUMBER, 
+	"LOGMNR_SPARE8" NUMBER, 
+	"LOGMNR_SPARE9" NUMBER, 
+	"COL#" NUMBER, 
+	"XTYPESCHEMANAME" VARCHAR2(384), 
+	"XTYPENAME" VARCHAR2(4000), 
+	"XFQCOLNAME" VARCHAR2(4000), 
+	"XTOPINTCOL" NUMBER, 
+	"XREFFEDTABLEOBJN" NUMBER, 
+	"XREFFEDTABLEOBJV" NUMBER, 
+	"XCOLTYPEFLAGS" NUMBER, 
+	"XOPQTYPETYPE" NUMBER, 
+	"XOPQTYPEFLAGS" NUMBER, 
+	"XOPQLOBINTCOL" NUMBER, 
+	"XOPQOBJINTCOL" NUMBER, 
+	"XXMLINTCOL" NUMBER, 
+	"EAOWNER#" NUMBER, 
+	"EAMKEYID" VARCHAR2(192), 
+	"EAENCALG" NUMBER, 
+	"EAINTALG" NUMBER, 
+	"EACOLKLC" RAW(2000), 
+	"EAKLCLEN" NUMBER, 
+	"EAFLAGS" NUMBER, 
+	"LOGMNRDERIVEDFLAGS" NUMBER, 
+	"COLLID" NUMBER, 
+	"COLLINTCOL#" NUMBER, 
+	"ACDRRESCOL#" NUMBER
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRGGC_GTLO
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRGGC_GTLO" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"KEYOBJ#" NUMBER, 
+	"LVLCNT" NUMBER, 
+	"BASEOBJ#" NUMBER, 
+	"BASEOBJV#" NUMBER, 
+	"LVL1OBJ#" NUMBER, 
+	"LVL2OBJ#" NUMBER, 
+	"LVL0TYPE#" NUMBER, 
+	"LVL1TYPE#" NUMBER, 
+	"LVL2TYPE#" NUMBER, 
+	"OWNER#" NUMBER, 
+	"OWNERNAME" VARCHAR2(384), 
+	"LVL0NAME" VARCHAR2(384), 
+	"LVL1NAME" VARCHAR2(384), 
+	"LVL2NAME" VARCHAR2(384), 
+	"INTCOLS" NUMBER, 
+	"COLS" NUMBER, 
+	"KERNELCOLS" NUMBER, 
+	"TAB_FLAGS" NUMBER, 
+	"TRIGFLAG" NUMBER, 
+	"ASSOC#" NUMBER, 
+	"OBJ_FLAGS" NUMBER, 
+	"TS#" NUMBER, 
+	"TSNAME" VARCHAR2(90), 
+	"PROPERTY" NUMBER, 
+	"START_SCN" NUMBER, 
+	"DROP_SCN" NUMBER, 
+	"XIDUSN" NUMBER, 
+	"XIDSLT" NUMBER, 
+	"XIDSQN" NUMBER, 
+	"FLAGS" NUMBER, 
+	"LOGMNR_SPARE1" NUMBER, 
+	"LOGMNR_SPARE2" NUMBER, 
+	"LOGMNR_SPARE3" VARCHAR2(1000), 
+	"LOGMNR_SPARE4" DATE, 
+	"LOGMNR_SPARE5" NUMBER, 
+	"LOGMNR_SPARE6" NUMBER, 
+	"LOGMNR_SPARE7" NUMBER, 
+	"LOGMNR_SPARE8" NUMBER, 
+	"LOGMNR_SPARE9" NUMBER, 
+	"PARTTYPE" NUMBER, 
+	"SUBPARTTYPE" NUMBER, 
+	"UNSUPPORTEDCOLS" NUMBER, 
+	"COMPLEXTYPECOLS" NUMBER, 
+	"NTPARENTOBJNUM" NUMBER, 
+	"NTPARENTOBJVERSION" NUMBER, 
+	"NTPARENTINTCOLNUM" NUMBER, 
+	"LOGMNRTLOFLAGS" NUMBER, 
+	"LOGMNRMCV" VARCHAR2(30), 
+	"ACDRFLAGS" NUMBER, 
+	"ACDRTSOBJ#" NUMBER, 
+	"ACDRROWTSINTCOL#" NUMBER
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_GLOBAL$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_GLOBAL$" SHARING=METADATA 
+   (	"HIGH_RECID_FOREIGN" NUMBER, 
+	"HIGH_RECID_DELETED" NUMBER, 
+	"LOCAL_RESET_SCN" NUMBER, 
+	"LOCAL_RESET_TIMESTAMP" NUMBER, 
+	"VERSION_TIMESTAMP" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"SPARE4" VARCHAR2(2000), 
+	"SPARE5" DATE, 
+	"SESSION#" NUMBER
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_GT_TAB_INCLUDE$
+--------------------------------------------------------
+
+  CREATE GLOBAL TEMPORARY TABLE "LOGMNR_GT_TAB_INCLUDE$" SHARING=METADATA 
+   (	"SCHEMA_NAME" VARCHAR2(390), 
+	"TABLE_NAME" VARCHAR2(390), 
+	"PDB_NAME" VARCHAR2(390), 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000)
+   ) ON COMMIT PRESERVE ROWS ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_GT_USER_INCLUDE$
+--------------------------------------------------------
+
+  CREATE GLOBAL TEMPORARY TABLE "LOGMNR_GT_USER_INCLUDE$" SHARING=METADATA 
+   (	"USER_NAME" VARCHAR2(390), 
+	"USER_TYPE" NUMBER, 
+	"PDB_NAME" VARCHAR2(390), 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000)
+   ) ON COMMIT PRESERVE ROWS ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_GT_XID_INCLUDE$
+--------------------------------------------------------
+
+  CREATE GLOBAL TEMPORARY TABLE "LOGMNR_GT_XID_INCLUDE$" SHARING=METADATA 
+   (	"XIDUSN" NUMBER, 
+	"XIDSLT" NUMBER, 
+	"XIDSQN" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000), 
+	"PDBID" NUMBER, 
+	"PDB_NAME" VARCHAR2(390)
+   ) ON COMMIT PRESERVE ROWS ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_ICOL$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_ICOL$" SHARING=METADATA 
+   (	"OBJ#" NUMBER, 
+	"BO#" NUMBER, 
+	"COL#" NUMBER, 
+	"POS#" NUMBER, 
+	"SEGCOL#" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_IND$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_IND$" SHARING=METADATA 
+   (	"BO#" NUMBER(22,0), 
+	"COLS" NUMBER(22,0), 
+	"TYPE#" NUMBER(22,0), 
+	"FLAGS" NUMBER, 
+	"PROPERTY" NUMBER, 
+	"OBJ#" NUMBER(22,0), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_INDCOMPART$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_INDCOMPART$" SHARING=METADATA 
+   (	"OBJ#" NUMBER, 
+	"DATAOBJ#" NUMBER, 
+	"BO#" NUMBER, 
+	"PART#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_INDPART$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_INDPART$" SHARING=METADATA 
+   (	"OBJ#" NUMBER, 
+	"BO#" NUMBER, 
+	"PART#" NUMBER, 
+	"TS#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_INDSUBPART$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_INDSUBPART$" SHARING=METADATA 
+   (	"OBJ#" NUMBER(22,0), 
+	"DATAOBJ#" NUMBER(22,0), 
+	"POBJ#" NUMBER(22,0), 
+	"SUBPART#" NUMBER(22,0), 
+	"TS#" NUMBER(22,0), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_INTEGRATED_SPILL$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_INTEGRATED_SPILL$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"XIDUSN" NUMBER, 
+	"XIDSLT" NUMBER, 
+	"XIDSQN" NUMBER, 
+	"CHUNK" NUMBER, 
+	"FLAG" NUMBER, 
+	"CTIME" DATE, 
+	"MTIME" DATE, 
+	"SPILL_DATA" BLOB, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"SPARE4" DATE, 
+	"SPARE5" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_KOPM$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_KOPM$" SHARING=METADATA 
+   (	"LENGTH" NUMBER, 
+	"METADATA" RAW(255), 
+	"NAME" VARCHAR2(384), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_LOB$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_LOB$" SHARING=METADATA 
+   (	"OBJ#" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"COL#" NUMBER, 
+	"LOBJ#" NUMBER, 
+	"CHUNK" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_LOBFRAG$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_LOBFRAG$" SHARING=METADATA 
+   (	"FRAGOBJ#" NUMBER, 
+	"PARENTOBJ#" NUMBER, 
+	"TABFRAGOBJ#" NUMBER, 
+	"INDFRAGOBJ#" NUMBER, 
+	"FRAG#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_LOG$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_LOG$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"THREAD#" NUMBER, 
+	"SEQUENCE#" NUMBER, 
+	"FIRST_CHANGE#" NUMBER, 
+	"NEXT_CHANGE#" NUMBER, 
+	"FIRST_TIME" DATE, 
+	"NEXT_TIME" DATE, 
+	"FILE_NAME" VARCHAR2(513), 
+	"STATUS" NUMBER, 
+	"INFO" VARCHAR2(32), 
+	"TIMESTAMP" DATE, 
+	"DICT_BEGIN" VARCHAR2(3), 
+	"DICT_END" VARCHAR2(3), 
+	"STATUS_INFO" VARCHAR2(32), 
+	"DB_ID" NUMBER, 
+	"RESETLOGS_CHANGE#" NUMBER, 
+	"RESET_TIMESTAMP" NUMBER, 
+	"PREV_RESETLOGS_CHANGE#" NUMBER, 
+	"PREV_RESET_TIMESTAMP" NUMBER, 
+	"BLOCKS" NUMBER, 
+	"BLOCK_SIZE" NUMBER, 
+	"FLAGS" NUMBER, 
+	"CONTENTS" NUMBER, 
+	"RECID" NUMBER, 
+	"RECSTAMP" NUMBER, 
+	"MARK_DELETE_TIMESTAMP" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"SPARE4" NUMBER, 
+	"SPARE5" NUMBER
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_LOGMNR_BUILDLOG
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_LOGMNR_BUILDLOG" SHARING=METADATA 
+   (	"BUILD_DATE" VARCHAR2(20), 
+	"DB_TXN_SCNBAS" NUMBER, 
+	"DB_TXN_SCNWRP" NUMBER, 
+	"CURRENT_BUILD_STATE" NUMBER, 
+	"COMPLETION_STATUS" NUMBER, 
+	"MARKED_LOG_FILE_LOW_SCN" NUMBER, 
+	"INITIAL_XID" VARCHAR2(22), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0), 
+	"CDB_XID" VARCHAR2(22), 
+	"SPARE1" NUMBER, 
+	"SPARE2" VARCHAR2(4000)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_NTAB$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_NTAB$" SHARING=METADATA 
+   (	"COL#" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"NTAB#" NUMBER, 
+	"NAME" VARCHAR2(4000), 
+	"OBJ#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_OBJ$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_OBJ$" SHARING=METADATA 
+   (	"OBJV#" NUMBER(22,0), 
+	"OWNER#" NUMBER(22,0), 
+	"NAME" VARCHAR2(384), 
+	"NAMESPACE" NUMBER(22,0), 
+	"SUBNAME" VARCHAR2(384), 
+	"TYPE#" NUMBER(22,0), 
+	"OID$" RAW(16), 
+	"REMOTEOWNER" VARCHAR2(384), 
+	"LINKNAME" VARCHAR2(384), 
+	"FLAGS" NUMBER(22,0), 
+	"SPARE3" NUMBER(22,0), 
+	"STIME" DATE, 
+	"OBJ#" NUMBER(22,0), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0), 
+	"START_SCNBAS" NUMBER, 
+	"START_SCNWRP" NUMBER
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_OPQTYPE$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_OPQTYPE$" SHARING=METADATA 
+   (	"INTCOL#" NUMBER, 
+	"TYPE" NUMBER, 
+	"FLAGS" NUMBER, 
+	"LOBCOL" NUMBER, 
+	"OBJCOL" NUMBER, 
+	"EXTRACOL" NUMBER, 
+	"SCHEMAOID" RAW(16), 
+	"ELEMNUM" NUMBER, 
+	"SCHEMAURL" VARCHAR2(4000), 
+	"OBJ#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_PARAMETER$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_PARAMETER$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"NAME" VARCHAR2(384), 
+	"VALUE" VARCHAR2(2000), 
+	"TYPE" NUMBER, 
+	"SCN" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(2000)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_PARTOBJ$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_PARTOBJ$" SHARING=METADATA 
+   (	"PARTTYPE" NUMBER, 
+	"PARTCNT" NUMBER, 
+	"PARTKEYCOLS" NUMBER, 
+	"FLAGS" NUMBER, 
+	"DEFTS#" NUMBER, 
+	"DEFPCTFREE" NUMBER, 
+	"DEFPCTUSED" NUMBER, 
+	"DEFPCTTHRES" NUMBER, 
+	"DEFINITRANS" NUMBER, 
+	"DEFMAXTRANS" NUMBER, 
+	"DEFTINIEXTS" NUMBER, 
+	"DEFEXTSIZE" NUMBER, 
+	"DEFMINEXTS" NUMBER, 
+	"DEFMAXEXTS" NUMBER, 
+	"DEFEXTPCT" NUMBER, 
+	"DEFLISTS" NUMBER, 
+	"DEFGROUPS" NUMBER, 
+	"DEFLOGGING" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"DEFINCLCOL" NUMBER, 
+	"PARAMETERS" VARCHAR2(3000), 
+	"OBJ#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRP_CTAS_PART_MAP
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNRP_CTAS_PART_MAP" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"BASEOBJ#" NUMBER, 
+	"BASEOBJV#" NUMBER, 
+	"KEYOBJ#" NUMBER, 
+	"PART#" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(1000)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_PDB_INFO$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_PDB_INFO$" SHARING=METADATA 
+   (	"LOGMNR_DID" NUMBER, 
+	"LOGMNR_MDH" NUMBER, 
+	"PDB_NAME" VARCHAR2(384), 
+	"PDB_ID" NUMBER, 
+	"PDB_UID" NUMBER, 
+	"PLUGIN_SCN" NUMBER, 
+	"UNPLUG_SCN" NUMBER, 
+	"FLAGS" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000), 
+	"SPARE4" TIMESTAMP (6), 
+	"PDB_GLOBAL_NAME" VARCHAR2(384)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_PROCESSED_LOG$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_PROCESSED_LOG$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"THREAD#" NUMBER, 
+	"SEQUENCE#" NUMBER, 
+	"FIRST_CHANGE#" NUMBER, 
+	"NEXT_CHANGE#" NUMBER, 
+	"FIRST_TIME" DATE, 
+	"NEXT_TIME" DATE, 
+	"FILE_NAME" VARCHAR2(513), 
+	"STATUS" NUMBER, 
+	"INFO" VARCHAR2(32), 
+	"TIMESTAMP" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_PROPS$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_PROPS$" SHARING=METADATA 
+   (	"VALUE$" VARCHAR2(4000), 
+	"COMMENT$" VARCHAR2(4000), 
+	"NAME" VARCHAR2(384), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_REFCON$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_REFCON$" SHARING=METADATA 
+   (	"COL#" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"REFTYP" NUMBER, 
+	"STABID" RAW(16), 
+	"EXPCTOID" RAW(16), 
+	"OBJ#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_RESTART_CKPT$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_RESTART_CKPT$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"VALID" NUMBER, 
+	"CKPT_SCN" NUMBER, 
+	"XIDUSN" NUMBER, 
+	"XIDSLT" NUMBER, 
+	"XIDSQN" NUMBER, 
+	"SESSION_NUM" NUMBER, 
+	"SERIAL_NUM" NUMBER, 
+	"CKPT_INFO" BLOB, 
+	"FLAG" NUMBER, 
+	"OFFSET" NUMBER, 
+	"CLIENT_DATA" BLOB, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"PDBID" NUMBER
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_RESTART_CKPT_TXINFO$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_RESTART_CKPT_TXINFO$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"XIDUSN" NUMBER, 
+	"XIDSLT" NUMBER, 
+	"XIDSQN" NUMBER, 
+	"SESSION_NUM" NUMBER, 
+	"SERIAL_NUM" NUMBER, 
+	"FLAG" NUMBER, 
+	"START_SCN" NUMBER, 
+	"EFFECTIVE_SCN" NUMBER, 
+	"OFFSET" NUMBER, 
+	"TX_DATA" BLOB
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_SEED$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_SEED$" SHARING=METADATA 
+   (	"SEED_VERSION" NUMBER(22,0), 
+	"GATHER_VERSION" NUMBER(22,0), 
+	"SCHEMANAME" VARCHAR2(384), 
+	"OBJ#" NUMBER, 
+	"OBJV#" NUMBER(22,0), 
+	"TABLE_NAME" VARCHAR2(384), 
+	"COL_NAME" VARCHAR2(384), 
+	"COL#" NUMBER, 
+	"INTCOL#" NUMBER, 
+	"SEGCOL#" NUMBER, 
+	"TYPE#" NUMBER, 
+	"LENGTH" NUMBER, 
+	"PRECISION#" NUMBER, 
+	"SCALE" NUMBER, 
+	"NULL$" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_SESSION$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_SESSION$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"CLIENT#" NUMBER, 
+	"SESSION_NAME" VARCHAR2(128), 
+	"DB_ID" NUMBER, 
+	"RESETLOGS_CHANGE#" NUMBER, 
+	"SESSION_ATTR" NUMBER, 
+	"SESSION_ATTR_VERBOSE" VARCHAR2(400), 
+	"START_SCN" NUMBER, 
+	"END_SCN" NUMBER, 
+	"SPILL_SCN" NUMBER, 
+	"SPILL_TIME" DATE, 
+	"OLDEST_SCN" NUMBER, 
+	"RESUME_SCN" NUMBER, 
+	"GLOBAL_DB_NAME" VARCHAR2(384) DEFAULT null, 
+	"RESET_TIMESTAMP" NUMBER, 
+	"BRANCH_SCN" NUMBER, 
+	"VERSION" VARCHAR2(64), 
+	"REDO_COMPAT" VARCHAR2(20), 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"SPARE4" NUMBER, 
+	"SPARE5" NUMBER, 
+	"SPARE6" DATE, 
+	"SPARE7" VARCHAR2(1000), 
+	"SPARE8" VARCHAR2(1000)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_SESSION_ACTIONS$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_SESSION_ACTIONS$" SHARING=METADATA 
+   (	"FLAGSRUNTIME" NUMBER DEFAULT 0, 
+	"DROPSCN" NUMBER, 
+	"MODIFYTIME" TIMESTAMP (6), 
+	"DISPATCHTIME" TIMESTAMP (6), 
+	"DROPTIME" TIMESTAMP (6), 
+	"LCRCOUNT" NUMBER DEFAULT 0, 
+	"ACTIONNAME" VARCHAR2(30), 
+	"LOGMNRSESSION#" NUMBER, 
+	"PROCESSROLE#" NUMBER, 
+	"ACTIONTYPE#" NUMBER, 
+	"FLAGSDEFINETIME" NUMBER, 
+	"CREATETIME" TIMESTAMP (6), 
+	"XIDUSN" NUMBER, 
+	"XIDSLT" NUMBER, 
+	"XIDSQN" NUMBER, 
+	"THREAD#" NUMBER, 
+	"STARTSCN" NUMBER, 
+	"STARTSUBSCN" NUMBER, 
+	"ENDSCN" NUMBER, 
+	"ENDSUBSCN" NUMBER, 
+	"RBASQN" NUMBER, 
+	"RBABLK" NUMBER, 
+	"RBABYTE" NUMBER, 
+	"SESSION#" NUMBER, 
+	"OBJ#" NUMBER, 
+	"ATTR1" NUMBER, 
+	"ATTR2" NUMBER, 
+	"ATTR3" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" TIMESTAMP (6), 
+	"SPARE4" VARCHAR2(2000), 
+	"PDBID" NUMBER, 
+	"PDB_NAME" VARCHAR2(390)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_SESSION_EVOLVE$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_SESSION_EVOLVE$" SHARING=METADATA 
+   (	"BRANCH_LEVEL" NUMBER, 
+	"SESSION#" NUMBER, 
+	"DB_ID" NUMBER, 
+	"RESET_SCN" NUMBER, 
+	"RESET_TIMESTAMP" NUMBER, 
+	"PREV_RESET_SCN" NUMBER, 
+	"PREV_RESET_TIMESTAMP" NUMBER, 
+	"STATUS" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"SPARE4" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_SHARD_TS
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_SHARD_TS" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER, 
+	"TABLESPACE_NAME" VARCHAR2(90), 
+	"CHUNK_NUMBER" NUMBER, 
+	"START_SCNBAS" NUMBER, 
+	"START_SCNWRP" NUMBER
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_SPILL$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_SPILL$" SHARING=METADATA 
+   (	"SESSION#" NUMBER, 
+	"XIDUSN" NUMBER, 
+	"XIDSLT" NUMBER, 
+	"XIDSQN" NUMBER, 
+	"CHUNK" NUMBER, 
+	"STARTIDX" NUMBER, 
+	"ENDIDX" NUMBER, 
+	"FLAG" NUMBER, 
+	"SEQUENCE#" NUMBER, 
+	"SPILL_DATA" BLOB, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"PDBID" NUMBER
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_SUBCOLTYPE$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_SUBCOLTYPE$" SHARING=METADATA 
+   (	"INTCOL#" NUMBER, 
+	"TOID" RAW(16), 
+	"VERSION#" NUMBER, 
+	"INTCOLS" NUMBER, 
+	"INTCOL#S" RAW(2000), 
+	"FLAGS" NUMBER, 
+	"SYNOBJ#" NUMBER, 
+	"OBJ#" NUMBER, 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_TAB$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_TAB$" SHARING=METADATA 
+   (	"TS#" NUMBER(22,0), 
+	"COLS" NUMBER(22,0), 
+	"PROPERTY" NUMBER, 
+	"INTCOLS" NUMBER(22,0), 
+	"KERNELCOLS" NUMBER(22,0), 
+	"BOBJ#" NUMBER(22,0), 
+	"TRIGFLAG" NUMBER(22,0), 
+	"FLAGS" NUMBER(22,0), 
+	"OBJ#" NUMBER(22,0), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0), 
+	"ACDRFLAGS" NUMBER, 
+	"ACDRTSOBJ#" NUMBER, 
+	"ACDRROWTSINTCOL#" NUMBER
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_TABCOMPART$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_TABCOMPART$" SHARING=METADATA 
+   (	"OBJ#" NUMBER(22,0), 
+	"BO#" NUMBER(22,0), 
+	"PART#" NUMBER(22,0), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_TABPART$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_TABPART$" SHARING=METADATA 
+   (	"OBJ#" NUMBER(22,0), 
+	"TS#" NUMBER(22,0), 
+	"PART#" NUMBER, 
+	"BO#" NUMBER(22,0), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_TABSUBPART$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_TABSUBPART$" SHARING=METADATA 
+   (	"OBJ#" NUMBER(22,0), 
+	"DATAOBJ#" NUMBER(22,0), 
+	"POBJ#" NUMBER(22,0), 
+	"SUBPART#" NUMBER(22,0), 
+	"TS#" NUMBER(22,0), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNRT_MDDL$
+--------------------------------------------------------
+
+  CREATE GLOBAL TEMPORARY TABLE "LOGMNRT_MDDL$" SHARING=METADATA 
+   (	"SOURCE_OBJ#" NUMBER, 
+	"SOURCE_ROWID" ROWID, 
+	"DEST_ROWID" ROWID
+   ) ON COMMIT DELETE ROWS ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_TS$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_TS$" SHARING=METADATA 
+   (	"TS#" NUMBER(22,0), 
+	"NAME" VARCHAR2(90), 
+	"OWNER#" NUMBER(22,0), 
+	"BLOCKSIZE" NUMBER(22,0), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0), 
+	"START_SCNBAS" NUMBER, 
+	"START_SCNWRP" NUMBER
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_TYPE$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_TYPE$" SHARING=METADATA 
+   (	"VERSION#" NUMBER, 
+	"VERSION" VARCHAR2(384), 
+	"TVOID" RAW(16), 
+	"TYPECODE" NUMBER, 
+	"PROPERTIES" NUMBER, 
+	"ATTRIBUTES" NUMBER, 
+	"METHODS" NUMBER, 
+	"HIDDENMETHODS" NUMBER, 
+	"SUPERTYPES" NUMBER, 
+	"SUBTYPES" NUMBER, 
+	"EXTERNTYPE" NUMBER, 
+	"EXTERNNAME" VARCHAR2(4000), 
+	"HELPERCLASSNAME" VARCHAR2(4000), 
+	"LOCAL_ATTRS" NUMBER, 
+	"LOCAL_METHODS" NUMBER, 
+	"TYPEID" RAW(16), 
+	"ROOTTOID" RAW(16), 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" NUMBER, 
+	"SUPERTOID" RAW(16), 
+	"HASHCODE" RAW(17), 
+	"TOID" RAW(16), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_UID$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_UID$" SHARING=METADATA 
+   (	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_DID" NUMBER, 
+	"LOGMNR_MDH" NUMBER, 
+	"PDB_NAME" VARCHAR2(384), 
+	"PDB_ID" NUMBER, 
+	"PDB_UID" NUMBER, 
+	"START_SCN" NUMBER, 
+	"END_SCN" NUMBER, 
+	"FLAGS" NUMBER, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(4000), 
+	"SPARE4" TIMESTAMP (6)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGMNR_USER$
+--------------------------------------------------------
+
+  CREATE TABLE "LOGMNR_USER$" SHARING=METADATA 
+   (	"USER#" NUMBER(22,0), 
+	"NAME" VARCHAR2(384), 
+	"LOGMNR_UID" NUMBER(22,0), 
+	"LOGMNR_FLAGS" NUMBER(22,0)
+   ) 
+  PARTITION BY RANGE ("LOGMNR_UID") 
+ (PARTITION "P_LESSTHAN100"  VALUES LESS THAN (100) ) ;
+--------------------------------------------------------
+--  DDL for Table LOGSTDBY$APPLY_MILESTONE
+--------------------------------------------------------
+
+  CREATE TABLE "LOGSTDBY$APPLY_MILESTONE" SHARING=METADATA 
+   (	"SESSION_ID" NUMBER, 
+	"COMMIT_SCN" NUMBER, 
+	"COMMIT_TIME" DATE, 
+	"SYNCH_SCN" NUMBER, 
+	"EPOCH" NUMBER, 
+	"PROCESSED_SCN" NUMBER, 
+	"PROCESSED_TIME" DATE, 
+	"FETCHLWM_SCN" NUMBER DEFAULT (0), 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(2000), 
+	"FLAGS" NUMBER, 
+	"LWM_UPD_TIME" DATE, 
+	"SPARE4" NUMBER, 
+	"SPARE5" NUMBER, 
+	"SPARE6" NUMBER, 
+	"SPARE7" DATE, 
+	"PTO_RECOVERY_SCN" NUMBER, 
+	"PTO_RECOVERY_INCARNATION" NUMBER
+   ) ;
+--------------------------------------------------------
+--  DDL for Table LOGSTDBY$APPLY_PROGRESS
+--------------------------------------------------------
+
+  CREATE TABLE "LOGSTDBY$APPLY_PROGRESS" SHARING=METADATA 
+   (	"XIDUSN" NUMBER, 
+	"XIDSLT" NUMBER, 
+	"XIDSQN" NUMBER, 
+	"COMMIT_SCN" NUMBER, 
+	"COMMIT_TIME" DATE, 
+	"SPARE1" NUMBER, 
+	"SPARE2" NUMBER, 
+	"SPARE3" VARCHAR2(2000)
+   ) 
+  PARTITION BY RANGE ("COMMIT_SCN") 
+ (PARTITION "P0"  VALUES LESS THAN (0) ) ;
